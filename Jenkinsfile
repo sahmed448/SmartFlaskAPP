@@ -18,8 +18,8 @@ pipeline {
             steps {
 				echo "Unit Tests"
 				//sh(returnStatus: true, script: '. ~/.bashrc \n pyenv version')
-				//sh('chmod +x ./jenkinsscript.sh')
-				sh('bash ./test.sh')
+				sh('chmod +x ./jenkinsscript.sh')
+				//('bash ./test.sh')
 			}
         }
 	    
