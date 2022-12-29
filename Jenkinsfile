@@ -7,7 +7,8 @@ pipeline {
 	    {
              steps {
 				echo "Checkout"
-				git branch: 'main', url: 'https://github.com/sahmed448/SmartFlaskAPP.git'
+                //commenting below line, since git will implicitly do the checkout since we have selected scm option in our jenkins job
+				//git branch: 'main', url: 'https://github.com/sahmed448/SmartFlaskAPP.git'
 				sh 'ls -l'
                 }
         }
